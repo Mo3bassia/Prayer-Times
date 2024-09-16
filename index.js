@@ -69,7 +69,7 @@ show.onclick = function () {
   if (check() && dateChange.value == "") {
     axios
       .get(
-        `http://api.aladhan.com/v1/timingsByCity?city=${city.value}&country=${country.value}&method=8`
+        `https://api.aladhan.com/v1/timingsByCity?city=${city.value}&country=${country.value}&method=8`
       )
       .then((result) => {
         prayers.innerHTML = "";
