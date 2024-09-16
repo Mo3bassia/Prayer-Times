@@ -1,0 +1,150 @@
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: tajawal;
+  direction: rtl;
+}
+
+.btn:before {
+  position: absolute;
+  content: "";
+  left: -2px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(2, 122, 250);
+  transition: 0.5s;
+  border-radius: 6px;
+  z-index: -5;
+}
+
+.btn:hover:before {
+  width: 109%;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  border: 2px solid rgb(2, 122, 250);
+  padding: 12px;
+  cursor: pointer;
+  color: rgb(2, 122, 250);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  /* background-color: rgb(2, 122, 250); */
+  color: #fff;
+}
+
+.btn.centered {
+  display: block;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.now {
+  border: 2px solid rgb(2, 122, 250);
+  padding: 12px 40px;
+  width: fit-content;
+  margin: auto;
+  color: rgb(2, 122, 250);
+  border-radius: 6px;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.timeNow {
+  font-size: 1.875rem;
+}
+
+.time {
+  direction: ltr;
+}
+
+.input {
+  padding: 12px;
+  width: 100%;
+  display: block;
+  outline: none;
+  margin-bottom: 10px;
+  border: 2px solid rgb(2, 122, 250);
+  color: rgb(2, 122, 250);
+  border-radius: 6px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.input::placeholder {
+  color: rgb(5, 65, 130);
+}
+
+.search-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.prayers ul li {
+  min-width: 200px;
+  width: 50%;
+  margin: 10px auto;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(2, 122, 250);
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f6f6f6;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.disabled {
+  opacity: 0.2;
+}
+
+.day {
+  font-size: 1.875rem;
+  color: rgb(2, 122, 250);
+}
+
+.date {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-content: center;
+
+  color: rgb(2, 122, 250);
+}
